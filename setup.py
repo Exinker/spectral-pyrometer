@@ -32,8 +32,4 @@ setup(
     # requires
     install_requires=['PySide6', 'spectrumlab @ git+https://github.com/Exinker/spectrumlab.git'],
     python_requires='>=3.10',
-
-    dependency_links=[
-        r'//10.11.12.11/Users/vaschenko/spectrumlab/dist/',
-    ]
 )
