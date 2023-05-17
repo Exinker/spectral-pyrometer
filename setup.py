@@ -30,6 +30,6 @@ setup(
     # },
 
     # requires
-    install_requires=['PySide6', 'spectrumlab @ git+https://github.com/Exinker/spectrumlab.git'],
+    install_requires=['jupyter', 'spectrumlab @ git+https://github.com/Exinker/spectrumlab.git'],
     python_requires='>=3.10',
 )
