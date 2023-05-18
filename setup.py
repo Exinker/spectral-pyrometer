@@ -30,6 +30,6 @@ setup(
     # },
 
     # requires
-    install_requires=['spectrumlab @ git+https://github.com/Exinker/spectrumlab.git', 'vmk-spectrum'],
+    install_requires=['PySide6', 'spectrumlab @ git+https://github.com/Exinker/spectrumlab.git', 'vmk-spectrum'],
     python_requires='>=3.10',
 )
