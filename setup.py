@@ -30,6 +30,6 @@ setup(
     # },
 
     # requires
-    install_requires=['jupyter', 'spectrumlab @ git+https://github.com/Exinker/spectrumlab.git'],
+    install_requires=['jupyter', 'spectrumlab @ git+https://github.com/Exinker/spectrumlab.git', 'vmk-spectrum'],
     python_requires='>=3.10',
 )
