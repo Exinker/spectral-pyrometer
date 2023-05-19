@@ -22,12 +22,17 @@ class Temperature:
         data = wien[lb:ub]
 
         self._p = np.array([
-            np.polyfit(data.x, data.y[t,:], deg=1).tolist()
+            self._polyfit(data.x, data.y[t,:])
             for t in data.time
         ])
 
         self._values = -1/self._p[:,0]
         self._deviation = np.full((data.n_times,), np.nan)  # FIXME: !
+
+    def _polyfit(self, x: Array, y: Array) -> tuple[float, float]:
+        mask = np.isfinite(y)
+
+        return tuple(np.polyfit(x[mask], y[mask], deg=1))
 
     @property
     def time(self) -> Array:
